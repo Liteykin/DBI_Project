@@ -1,8 +1,3 @@
-IF EXISTS (SELECT * FROM sys.databases WHERE name = 'aether_db')
-BEGIN
-    DROP DATABASE aether_db
-END
-
 CREATE DATABASE aether_db
 USE aether_db
 
@@ -17,6 +12,11 @@ CREATE TABLE Users (
     last_login DATETIME
 );
 
+CREATE TABLE DeviceTypes (
+    DeviceTypeID INT PRIMARY KEY IDENTITY (1,1),
+    DeviceType VARCHAR(255)
+);
+
 CREATE TABLE UserPreferences (
     UserID INT PRIMARY KEY,
     Language VARCHAR(255) NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE UserPreferences (
 );
 
 CREATE TABLE Devices (
-    DeviceID INT PRIMARY KEY DEFAULT NEWID(),
+    DeviceID INT PRIMARY KEY IDENTITY (1,1),
     UserID INT NOT NULL,
     DeviceType INT NOT NULL,
     DeviceName VARCHAR(255),
@@ -40,12 +40,7 @@ CREATE TABLE Commands (
     DeviceID INT NOT NULL,
     CommandText VARCHAR(255),
     CommandResponse VARCHAR(255) NOT NULL,
-    Timestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    Timestamp TIMESTAMP NOT NULL,
     FOREIGN KEY (UserID) REFERENCES Users(UserID),
     FOREIGN KEY (DeviceID) REFERENCES Devices(DeviceID)
-);
-
-CREATE TABLE DeviceTypes (
-    DeviceTypeID INT PRIMARY KEY IDENTITY (1,1),
-    DeviceType VARCHAR(255)
 );
