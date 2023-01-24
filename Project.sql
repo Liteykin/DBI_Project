@@ -1,3 +1,11 @@
+IF EXISTS (SELECT * FROM sys.databases WHERE name = 'aether_db')
+BEGIN
+    DROP DATABASE aether_db
+END
+
+CREATE DATABASE aether_db
+USE aether_db
+
 CREATE TABLE Users (
     UserID INT PRIMARY KEY IDENTITY (1,1),
     UserName VARCHAR(50) NOT NULL UNIQUE,
