@@ -2,8 +2,6 @@
 
 ## Use
 A database Model for my group project. The Bot is called Aether.
-It will have tables like:
-User 
 
 ## Contributor
   lit22638@spengergasse.at
