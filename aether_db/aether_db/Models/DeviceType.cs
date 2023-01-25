@@ -24,5 +24,10 @@ namespace aether_db.Models
 
         [InverseProperty("DeviceTypeNavigation")]
         public virtual ICollection<Device> Devices { get; set; }
+
+        public void AddRange(List<DeviceType> deviceTypes)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

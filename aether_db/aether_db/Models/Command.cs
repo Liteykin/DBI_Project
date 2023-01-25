@@ -22,7 +22,7 @@ namespace aether_db.Models
         [Unicode(false)]
         public string CommandResponse { get; set; }
         [Required]
-        public byte[] Timestamp { get; set; }
+        public DateTime Timestamp { get; set; }
 
         [ForeignKey("DeviceID")]
         [InverseProperty("Commands")]

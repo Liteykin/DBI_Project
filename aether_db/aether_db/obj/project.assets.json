@@ -3185,11 +3185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\litey\\source\\repos\\aether_db\\aether_db\\aether_db.csproj",
+      "projectUniqueName": "C:\\Github\\SchoolProjects\\DBI_Project\\aether_db\\aether_db\\aether_db.csproj",
       "projectName": "aether_db",
-      "projectPath": "C:\\Users\\litey\\source\\repos\\aether_db\\aether_db\\aether_db.csproj",
+      "projectPath": "C:\\Github\\SchoolProjects\\DBI_Project\\aether_db\\aether_db\\aether_db.csproj",
       "packagesPath": "C:\\Users\\litey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\litey\\source\\repos\\aether_db\\aether_db\\obj\\",
+      "outputPath": "C:\\Github\\SchoolProjects\\DBI_Project\\aether_db\\aether_db\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
