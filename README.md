@@ -9,4 +9,4 @@ User
   lit22638@spengergasse.at
 - [Mark Liteykin](https://github.com/L-Mark)
 
-![image of the Database](C:\Users\litey\Downloads\AtherAssistant-Aether_Project.png)
+![image of the Database](AtherAssistant-Aether_Project.png)
