@@ -14,6 +14,8 @@ for (int i = 0; i < 10; i++)
         Email = "user" + i + "@example.com",
         Password = "password" + i,
         Number =  "+" + i + i + i + i + i + i + i + i + i,
+        created_at = DateTime.Now,
+        last_login = DateTime.Now
     };
     users.Add(user);
 }
@@ -45,13 +47,13 @@ var devices = new List<aether_db.Models.Device>();
 var rnd = new Random();
 foreach (var user in users)
 {
-    var device = new aether_db.Models.Device
+    var device = new aether_db.Models.Device()
     {
         UserID = user.UserID,
-        DeviceType = rnd.Next(1, 4),
-        DeviceName = "Device " + user.UserID
+        DeviceType = deviceTypes.ElementAt(rnd.Next(0, 3)).DeviceTypeID,
+        DeviceName = "Device " + user.UserID,
     };
-    context.Devices.Add(device);
+    devices.Add(device);
 }
 
 context.Devices.AddRange(devices);
@@ -65,7 +67,6 @@ foreach (var device in devices)
         DeviceID = device.DeviceID,
         CommandText = "",
         CommandResponse = "Command executed successfully",
-        Timestamp = DateTime.Now
     };
     commands.Add(command);
 }
