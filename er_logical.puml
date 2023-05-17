@@ -1,0 +1,70 @@
+@startuml "Chatflow"
+entity "User" as user {
+  + UserId : int [PK]
+  --
+  Username : varchar
+  UserFirstName : varchar
+  UserLastName : varchar
+  UserPassword : varchar
+  UserEmail : varchar
+  UserBirthDate : date
+  UserSignUpDate : datetime
+}
+
+entity "Room" as room {
+  + ChatRoomId : int [PK]
+  --
+  + CategoryId : int [FK]
+  --
+  ChatRoomName : varchar
+  ChatRoomCreationDate : datetime
+}
+
+entity "Category" as category {
+  + CategoryId : int [PK]
+  --
+  CategoryName : varchar
+}
+
+entity "UserRoom" as user_room {
+  + UserId : int [PK]
+  + ChatRoomId : int [PK]
+  --
+  UserChatRoomJoinDate : datetime
+}
+
+entity "Message" as message {
+  + MessageId : int [PK]
+  --
+  + UserId : int [FK]
+  + ChatRoomId : int [FK]
+  --
+  MessageText : text
+  MessageTimestamp : datetime
+}
+
+entity "ReactionType" as reaction {
+  + ReactionId : int [PK]
+  --
+  ReactionType : varchar
+}
+
+entity "MessageReaction" as message_reaction {
+  + MessageReactionId : int [PK]
+  --
+  + MessageId : int [FK]
+  + UserId : int [FK]
+  + ReactionId : int [FK]
+  --
+  ReactionTimestamp : datetime
+}
+
+user ||..o{ user_room
+user_room }o..|| room
+room ||..o{ message
+user ||..o{ message
+category ||..o{ room
+message ||..o{ message_reaction
+user ||..o{ message_reaction
+reaction ||..o{ message_reaction
+@enduml
