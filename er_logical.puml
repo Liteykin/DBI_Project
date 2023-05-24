@@ -1,65 +1,63 @@
 @startuml "Chatflow"
 entity "User" as user {
-  + UserId : int [PK]
+  + UserId
   --
-  Username : varchar
-  UserFirstName : varchar
-  UserLastName : varchar
-  UserPassword : varchar
-  UserEmail : varchar
-  UserBirthDate : date
-  UserSignUpDate : datetime
+  Username
+  FirstName
+  LastName
+  Password
+  Email
+  BirthDate
+  SignUpDate
 }
 
 entity "Room" as room {
-  + ChatRoomId : int [PK]
+  + RoomId
   --
-  + CategoryId : int [FK]
-  --
-  ChatRoomName : varchar
-  ChatRoomCreationDate : datetime
+  + CategoryId <<FK>>
+  RoomName
+  RoomCreationDate
 }
 
 entity "Category" as category {
-  + CategoryId : int [PK]
+  + CategoryId
   --
-  CategoryName : varchar
+  CategoryName
 }
 
 entity "UserRoom" as user_room {
-  + UserId : int [PK]
-  + ChatRoomId : int [PK]
+  + UserId
+  + RoomId
   --
-  UserChatRoomJoinDate : datetime
+  UserRoomJoinDate
 }
 
 entity "Message" as message {
-  + MessageId : int [PK]
+  + MessageId
   --
-  + UserId : int [FK]
-  + ChatRoomId : int [FK]
-  --
-  MessageText : text
-  MessageTimestamp : datetime
+  + UserId <<FK>>
+  + RoomId <<FK>>
+  MessageText
+  Timestamp
 }
 
 entity "ReactionType" as reaction {
-  + ReactionId : int [PK]
+  + ReactionId
   --
-  ReactionType : varchar
+  ReactionType
 }
 
 entity "MessageReaction" as message_reaction {
-  + MessageReactionId : int [PK]
+  + MessageReactionId
   --
-  + MessageId : int [FK]
-  + UserId : int [FK]
-  + ReactionId : int [FK]
-  --
-  ReactionTimestamp : datetime
+  + MessageId <<FK>>
+  + UserId <<FK>>
+  + ReactionId <<FK>>
+  Timestamp
 }
 
 user ||..o{ user_room
+
 user_room }o..|| room
 room ||..o{ message
 user ||..o{ message
