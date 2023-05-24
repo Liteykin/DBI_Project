@@ -21,6 +21,7 @@ CREATE TABLE [User](
     Email VARCHAR(50) NOT NULL,
     BirthDate DATE NOT NULL,
     SignUpDate DATETIME NOT NULL,
+    Attributes VARCHAR(MAX),
     CONSTRAINT [UQ_Email] UNIQUE (Email)
 );
 
@@ -55,7 +56,7 @@ CREATE TABLE [Message](
     Text TEXT NOT NULL,
     Timestamp DATETIME NOT NULL,
     CONSTRAINT [FK_Message_User] FOREIGN KEY (UserId) REFERENCES [User](UserId),
-    CONSTRAINT [FK_Message_Room] FOREIGN KEY (RoomId) REFERENCES [Room](ChatRoomId)
+    CONSTRAINT [FK_Message_Room] FOREIGN KEY (RoomId) REFERENCES [Room](RoomId)
 );
 
 CREATE TABLE [ReactionType](
@@ -75,6 +76,7 @@ CREATE TABLE [MessageReaction](
     CONSTRAINT [FK_MessageReaction_ReactionType] FOREIGN KEY (ReactionId) REFERENCES [ReactionType](ReactionId)
 );
 
+
 ALTER TABLE [User]
 ADD CONSTRAINT [CHK_UserBirthDate]
-CHECK (UserBirthDate <= GETDATE());
+CHECK (BirthDate <= GETDATE());
