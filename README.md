@@ -1,9 +1,9 @@
 # Aether Database
 
 ## Use
-A database Model for my group project. The Bot is called Aether.
+Chat Database.
 
-![image of the Database](AtherAssistant-Aether_Project.png)
+![image of the Database](er_logical.png)
 
 ## Contributor
   lit22638@spengergasse.at
