@@ -1,0 +1,93 @@
+@startuml "Chatflow"
+
+entity "User" as user {
+  + UserId [PK] : int
+  --
+  Username : varchar(255) [NOT NULL]
+  FirstName : varchar(255) [NOT NULL]
+  LastName : varchar(255) [NOT NULL]
+  Password : varchar(255) [NOT NULL]
+  Email : varchar(255) [NOT NULL]
+  BirthDate : date
+  SignUpDate : date [NOT NULL]
+
+  -- Constraints --
+  unique(Username)
+  unique(Email)
+}
+
+entity "Room" as room {
+  + RoomId [PK] : int
+  --
+  + CategoryId [FK] : int
+  RoomName : varchar(255) [NOT NULL]
+  RoomCreationDate : date [NOT NULL]
+
+  -- Constraints --
+  unique(RoomName)
+}
+
+entity "Category" as category {
+  + CategoryId [PK] : int
+  --
+  CategoryName : varchar(255) [NOT NULL]
+
+  -- Constraints --
+  unique(CategoryName)
+}
+
+entity "UserRoom" as user_room {
+  + UserId [FK] : int
+  + RoomId [FK] : int
+  --
+  UserRoomJoinDate : date [NOT NULL]
+
+  -- Constraints --
+  unique(UserId, RoomId)
+}
+
+entity "Message" as message {
+  + MessageId [PK] : int
+  --
+  + UserId [FK] : int
+  + RoomId [FK] : int
+  MessageText : varchar(1000) [NOT NULL]
+  Timestamp : datetime [NOT NULL]
+
+  -- Constraints --
+  check(MessageText != "")
+}
+
+entity "ReactionType" as reaction {
+  + ReactionId [PK] : int
+  --
+  ReactionType : varchar(255) [NOT NULL]
+
+  -- Constraints --
+  unique(ReactionType)
+}
+
+
+
+entity "MessageReaction" as message_reaction {
+  + MessageReactionId [PK] : int
+  --
+  + MessageId [FK] : int
+  + UserId [FK] : int
+  + ReactionId [FK] : int
+  Timestamp : datetime [NOT NULL]
+
+  -- Constraints --
+  unique(MessageId, UserId, ReactionId)
+}
+
+user ||--o{ user_room
+user_room }o--|| room
+room ||--o{ message
+user ||--o{ message
+category ||--o{ room
+message ||--o{ message_reaction
+user ||--o{ message_reaction
+reaction ||--o{ message_reaction
+
+@enduml
