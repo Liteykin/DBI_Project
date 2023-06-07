@@ -14,6 +14,7 @@ GO
 
 CREATE TABLE [User](
     UserId INT IDENTITY(1,1) PRIMARY KEY,
+    SupervisorId INT,
     Username VARCHAR(50) NOT NULL,
     FirstName VARCHAR(50) NOT NULL,
     LastName VARCHAR(50) NOT NULL,
@@ -22,7 +23,8 @@ CREATE TABLE [User](
     BirthDate DATE NOT NULL,
     SignUpDate DATETIME NOT NULL,
     Attributes VARCHAR(MAX),
-    CONSTRAINT [UQ_Email] UNIQUE (Email)
+    CONSTRAINT [UQ_Email] UNIQUE (Email),
+    CONSTRAINT [FK_User_Supervisor] FOREIGN KEY (SupervisorId) REFERENCES [User](UserId)
 );
 
 CREATE TABLE [Category](
@@ -80,3 +82,7 @@ CREATE TABLE [MessageReaction](
 ALTER TABLE [User]
 ADD CONSTRAINT [CHK_UserBirthDate]
 CHECK (BirthDate <= GETDATE());
+
+ALTER TABLE [User]
+ADD SupervisorId INT,
+CONSTRAINT [FK_User_Supervisor] FOREIGN KEY (SupervisorId) REFERENCES [User](UserId);
