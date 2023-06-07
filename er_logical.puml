@@ -1,0 +1,68 @@
+@startuml "Chatflow"
+entity "User" as user {
+  + UserId
+  --
+  Username
+  FirstName
+  LastName
+  Password
+  Email
+  BirthDate
+  SignUpDate
+}
+
+entity "Room" as room {
+  + RoomId
+  --
+  + CategoryId <<FK>>
+  RoomName
+  RoomCreationDate
+}
+
+entity "Category" as category {
+  + CategoryId
+  --
+  CategoryName
+}
+
+entity "UserRoom" as user_room {
+  + UserId
+  + RoomId
+  --
+  UserRoomJoinDate
+}
+
+entity "Message" as message {
+  + MessageId
+  --
+  + UserId <<FK>>
+  + RoomId <<FK>>
+  MessageText
+  Timestamp
+}
+
+entity "ReactionType" as reaction {
+  + ReactionId
+  --
+  ReactionType
+}
+
+entity "MessageReaction" as message_reaction {
+  + MessageReactionId
+  --
+  + MessageId <<FK>>
+  + UserId <<FK>>
+  + ReactionId <<FK>>
+  Timestamp
+}
+
+user ||..o{ user_room
+
+user_room }o..|| room
+room ||..o{ message
+user ||..o{ message
+category ||..o{ room
+message ||..o{ message_reaction
+user ||..o{ message_reaction
+reaction ||..o{ message_reaction
+@enduml
