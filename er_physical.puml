@@ -10,6 +10,7 @@ entity "User" as user {
   Email : varchar(255) [NOT NULL]
   BirthDate : date
   SignUpDate : date [NOT NULL]
+  Attributes : varchar(MAX)
 
   -- Constraints --
   unique(Username)
