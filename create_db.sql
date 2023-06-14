@@ -1,14 +1,15 @@
 USE master;
-GO
+
+DECLARE @DBNAME AS NVARCHAR(MAX) = N'Chatflow';
+
+IF DB_ID(@DBNAME) IS NOT NULL
 BEGIN
-    DECLARE @DBNAME AS VARCHAR(MAX) = 'Chatflow'
-    IF EXISTS(SELECT * FROM sys.databases WHERE Name = @DBNAME)
-    BEGIN
-        EXEC('ALTER DATABASE ' + @DBNAME + ' SET SINGLE_USER WITH ROLLBACK IMMEDIATE');
-        EXEC('DROP DATABASE ' + @DBNAME);
-    END;
-    EXEC('CREATE DATABASE ' + @DBNAME);
+    EXEC(N'ALTER DATABASE ' + @DBNAME + N' SET SINGLE_USER WITH ROLLBACK IMMEDIATE; DROP DATABASE ' + @DBNAME + N';');
 END;
+
+EXEC(N'CREATE DATABASE ' + @DBNAME + N';');
+GO
+
 USE Chatflow;
 GO
 
@@ -79,8 +80,6 @@ CREATE TABLE [MessageReaction](
     CONSTRAINT [FK_MessageReaction_ReactionType] FOREIGN KEY (ReactionId) REFERENCES [ReactionType](ReactionId)
 );
 
-use Chatflow;
-GO
 CREATE VIEW SupervisorHierarchy AS
 SELECT
     U1.UserId AS UserId,
@@ -96,6 +95,12 @@ FROM
 LEFT JOIN
     [User] U2 ON U1.SupervisorId = U2.UserId;
 
+INSERT INTO [User] (SupervisorId, Username, FirstName, LastName, Password, Email, BirthDate, SignUpDate, Attributes)
+VALUES
+(NULL, 'jdoe', 'John', 'Doe', 'password1', 'jdoe@example.com', '1980-01-01', GETDATE(), NULL),
+(NULL, 'asmith', 'Alice', 'Smith', 'password2', 'asmith@example.com', '1985-01-01', GETDATE(), NULL),
+(1, 'mjones', 'Michael', 'Jones', 'password3', 'mjones@example.com', '1990-01-01', GETDATE(), NULL),
+(2, 'sjohnson', 'Sarah', 'Johnson', 'password4', 'sjohnson@example.com', '1995-01-01', GETDATE(), NULL);
 
 SELECT * FROM [User];
 
