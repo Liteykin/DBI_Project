@@ -12,6 +12,7 @@
 (Beschreibe mit 2-3 Absätzen, welches Thema du modellierst.)
 ICh modelliere eine Database, welche Nachrichten und die Reaktionen speichert.
 
+
 ## ER Modell (gerendert)
 
 

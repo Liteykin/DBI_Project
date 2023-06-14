@@ -1,15 +1,27 @@
-USE master;
+USE tempdb;
+
 GO
+
 BEGIN
+
     DECLARE @DBNAME AS VARCHAR(MAX) = 'Chatflow'
+
     IF EXISTS(SELECT * FROM sys.databases WHERE Name = @DBNAME)
+
     BEGIN
+
         EXEC('ALTER DATABASE ' + @DBNAME + ' SET SINGLE_USER WITH ROLLBACK IMMEDIATE');
+
         EXEC('DROP DATABASE ' + @DBNAME);
+
     END;
+
     EXEC('CREATE DATABASE ' + @DBNAME);
+
 END;
+
 USE Chatflow;
+
 GO
 
 CREATE TABLE [User](
@@ -79,6 +91,7 @@ CREATE TABLE [MessageReaction](
     CONSTRAINT [FK_MessageReaction_ReactionType] FOREIGN KEY (ReactionId) REFERENCES [ReactionType](ReactionId)
 );
 
+USE Chatflow;
 CREATE VIEW SupervisorHierarchy AS
 SELECT
     U1.UserId AS UserId,
