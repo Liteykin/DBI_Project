@@ -74,3 +74,67 @@ C:\Users\litey\RiderProjects\SQL_EFCore Connection\SQL_EFCore Connection\bin\Deb
 C:\Users\litey\RiderProjects\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\System.Text.Encodings.Web.dll
 C:\Users\litey\RiderProjects\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\System.Text.Json.dll
 C:\Users\litey\RiderProjects\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\SQL_EFCore Connection.exe
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\SQL_EFCore Connection.deps.json
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\SQL_EFCore Connection.runtimeconfig.json
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\SQL_EFCore Connection.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\SQL_EFCore Connection.pdb
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Bogus.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\obj\Debug\net7.0\SQL_EFCore Connection.csproj.AssemblyReference.cache
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\obj\Debug\net7.0\SQL_EFCore Connection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\obj\Debug\net7.0\SQL_EFCore Connection.AssemblyInfoInputs.cache
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\obj\Debug\net7.0\SQL_EFCore Connection.AssemblyInfo.cs
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\obj\Debug\net7.0\SQL_EFCore Connection.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\obj\Debug\net7.0\SQL_EFCore Connection.csproj.CopyComplete
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\obj\Debug\net7.0\SQL_EFCore Connection.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\obj\Debug\net7.0\refint\SQL_EFCore Connection.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\obj\Debug\net7.0\SQL_EFCore Connection.pdb
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\obj\Debug\net7.0\SQL_EFCore Connection.genruntimeconfig.cache
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\obj\Debug\net7.0\ref\SQL_EFCore Connection.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Mark\Downloads\DBI_Project\SQL_EFCore Connection\SQL_EFCore Connection\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll

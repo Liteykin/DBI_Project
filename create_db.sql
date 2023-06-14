@@ -1,16 +1,28 @@
-USE master;
+USE tempdb;
 
-DECLARE @DBNAME AS NVARCHAR(MAX) = N'Chatflow';
-
-IF DB_ID(@DBNAME) IS NOT NULL
-BEGIN
-    EXEC(N'ALTER DATABASE ' + @DBNAME + N' SET SINGLE_USER WITH ROLLBACK IMMEDIATE; DROP DATABASE ' + @DBNAME + N';');
-END;
-
-EXEC(N'CREATE DATABASE ' + @DBNAME + N';');
 GO
 
+BEGIN
+
+    DECLARE @DBNAME AS VARCHAR(MAX) = 'Chatflow'
+
+    IF EXISTS(SELECT * FROM sys.databases WHERE Name = @DBNAME)
+
+    BEGIN
+
+
+        EXEC('ALTER DATABASE ' + @DBNAME + ' SET SINGLE_USER WITH ROLLBACK IMMEDIATE');
+
+        EXEC('DROP DATABASE ' + @DBNAME);
+
+    END;
+
+    EXEC('CREATE DATABASE ' + @DBNAME);
+
+END;
+
 USE Chatflow;
+
 GO
 
 CREATE TABLE [User](
@@ -80,6 +92,7 @@ CREATE TABLE [MessageReaction](
     CONSTRAINT [FK_MessageReaction_ReactionType] FOREIGN KEY (ReactionId) REFERENCES [ReactionType](ReactionId)
 );
 
+use Chatflow;
 CREATE VIEW SupervisorHierarchy AS
 SELECT
     U1.UserId AS UserId,

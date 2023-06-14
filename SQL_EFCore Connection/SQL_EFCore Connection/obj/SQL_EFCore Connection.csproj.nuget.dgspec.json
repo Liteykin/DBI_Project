@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\litey\\RiderProjects\\SQL_EFCore Connection\\SQL_EFCore Connection\\SQL_EFCore Connection.csproj": {}
+    "C:\\Users\\Mark\\Downloads\\DBI_Project\\SQL_EFCore Connection\\SQL_EFCore Connection\\SQL_EFCore Connection.csproj": {}
   },
   "projects": {
-    "C:\\Users\\litey\\RiderProjects\\SQL_EFCore Connection\\SQL_EFCore Connection\\SQL_EFCore Connection.csproj": {
+    "C:\\Users\\Mark\\Downloads\\DBI_Project\\SQL_EFCore Connection\\SQL_EFCore Connection\\SQL_EFCore Connection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\litey\\RiderProjects\\SQL_EFCore Connection\\SQL_EFCore Connection\\SQL_EFCore Connection.csproj",
+        "projectUniqueName": "C:\\Users\\Mark\\Downloads\\DBI_Project\\SQL_EFCore Connection\\SQL_EFCore Connection\\SQL_EFCore Connection.csproj",
         "projectName": "SQL_EFCore Connection",
-        "projectPath": "C:\\Users\\litey\\RiderProjects\\SQL_EFCore Connection\\SQL_EFCore Connection\\SQL_EFCore Connection.csproj",
-        "packagesPath": "C:\\Users\\litey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\litey\\RiderProjects\\SQL_EFCore Connection\\SQL_EFCore Connection\\obj\\",
+        "projectPath": "C:\\Users\\Mark\\Downloads\\DBI_Project\\SQL_EFCore Connection\\SQL_EFCore Connection\\SQL_EFCore Connection.csproj",
+        "packagesPath": "C:\\Users\\Mark\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mark\\Downloads\\DBI_Project\\SQL_EFCore Connection\\SQL_EFCore Connection\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\litey\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Mark\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -44,39 +44,23 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.0-preview.4.23259.3, )"
+              "version": "[7.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Abstractions": {
               "target": "Package",
-              "version": "[8.0.0-preview.4.23259.3, )"
+              "version": "[7.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
-              "version": "[8.0.0-preview.4.23259.3, )"
+              "version": "[7.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[8.0.0-preview.4.23259.3, )"
+              "version": "[7.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.0-preview.4.23259.3, )"
-            },
-            "Microsoft.Extensions.Configuration": {
-              "target": "Package",
-              "version": "[8.0.0-preview.5.23280.8, )"
-            },
-            "Microsoft.Extensions.Configuration.FileExtensions": {
-              "target": "Package",
-              "version": "[8.0.0-preview.5.23280.8, )"
-            },
-            "Microsoft.Extensions.Configuration.FileProviderExtensions": {
-              "target": "Package",
-              "version": "[1.0.0-rc1-final, )"
-            },
-            "Microsoft.Extensions.Configuration.Json": {
-              "target": "Package",
-              "version": "[8.0.0-preview.5.23280.8, )"
+              "version": "[7.0.7, )"
             }
           },
           "imports": [
@@ -95,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
