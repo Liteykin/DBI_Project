@@ -9,6 +9,7 @@ entity "User" as user {
   Email
   BirthDate
   SignUpDate
+  Attributes
 }
 
 entity "Room" as room {

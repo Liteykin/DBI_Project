@@ -78,3 +78,29 @@ CREATE TABLE [MessageReaction](
     CONSTRAINT [FK_MessageReaction_User] FOREIGN KEY (UserId) REFERENCES [User](UserId),
     CONSTRAINT [FK_MessageReaction_ReactionType] FOREIGN KEY (ReactionId) REFERENCES [ReactionType](ReactionId)
 );
+
+CREATE VIEW SupervisorHierarchy AS
+SELECT
+    U1.UserId AS UserId,
+    U1.Username AS UserName,
+    U1.FirstName AS UserFirstName,
+    U1.LastName AS UserLastName,
+    U2.UserId AS SupervisorId,
+    U2.Username AS SupervisorUsername,
+    U2.FirstName AS SupervisorFirstName,
+    U2.LastName AS SupervisorLastName
+FROM
+    [User] U1
+LEFT JOIN
+    [User] U2 ON U1.SupervisorId = U2.UserId;
+
+INSERT INTO [User] (SupervisorId, Username, FirstName, LastName, Password, Email, BirthDate, SignUpDate, Attributes)
+VALUES
+(NULL, 'jdoe', 'John', 'Doe', 'password1', 'jdoe@example.com', '1980-01-01', GETDATE(), NULL),
+(NULL, 'asmith', 'Alice', 'Smith', 'password2', 'asmith@example.com', '1985-01-01', GETDATE(), NULL),
+(1, 'mjones', 'Michael', 'Jones', 'password3', 'mjones@example.com', '1990-01-01', GETDATE(), NULL),
+(2, 'sjohnson', 'Sarah', 'Johnson', 'password4', 'sjohnson@example.com', '1995-01-01', GETDATE(), NULL);
+
+SELECT * FROM [User];
+
+SELECT * FROM SupervisorHierarchy;
