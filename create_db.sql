@@ -10,7 +10,6 @@ BEGIN
 
     BEGIN
 
-
         EXEC('ALTER DATABASE ' + @DBNAME + ' SET SINGLE_USER WITH ROLLBACK IMMEDIATE');
 
         EXEC('DROP DATABASE ' + @DBNAME);
@@ -92,7 +91,7 @@ CREATE TABLE [MessageReaction](
     CONSTRAINT [FK_MessageReaction_ReactionType] FOREIGN KEY (ReactionId) REFERENCES [ReactionType](ReactionId)
 );
 
-use Chatflow;
+USE Chatflow;
 CREATE VIEW SupervisorHierarchy AS
 SELECT
     U1.UserId AS UserId,
