@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2023-06/schema",
+    "$id": "https://example.com/user.schema.json",
+    "title": "User",
+    "description": "A user in the chatflow database",
+    "type": "object",
+    "properties": {
+        "age": {
+            "description": "The age of the user",
+            "type": "integer"
+          },
+        "address": {
+            "description": "The address of the user",
+            "type": "string"
+          },
+        "interests": {
+            "description": "The interests of the user",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+        }
+    }
+}
