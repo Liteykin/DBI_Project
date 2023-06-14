@@ -61,10 +61,8 @@ namespace EFCoreAccess
         {
             using (var context = new ChatflowContext())
             {
-                // Check if the Users are already seeded
                 if (!context.Users.Any())
                 {
-                    // Seed the User table
                     var users = new List<User>
                     {
                         new User { SupervisorId = null, Username = "jdoe", FirstName = "John", LastName = "Doe", Password = "password1", Email = "jdoe@example.com", BirthDate = new DateTime(1980, 1, 1), SignUpDate = DateTime.Now },
